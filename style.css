@@ -33,6 +33,7 @@ section.header {
     top: 0px;
     background-color: rgb(239, 247, 255);
     background: linear-gradient(157deg, rgba(239, 247, 255, 1) 20%, rgb(223, 242, 240) 100%);
+    z-index: 1;
 }
 
 section.header a img {
@@ -104,19 +105,18 @@ button.cta:active {
 
 div.button {
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 /* Card section */
 section.cards {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 section.cards p.title {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -134,6 +134,9 @@ section.cards div.container {
     display: flex;
     align-items: center;
     gap: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 200px;
 }
 
 div.container img {
@@ -148,10 +151,18 @@ div.list.card{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 20px;
-    max-width: 1000px;
+    margin-bottom: 200px;
+    max-width: 1100px;
     gap: 20px;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.list.card.pricing{
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 div.small.card{
@@ -167,16 +178,30 @@ div.small.card{
     gap: 5px;
     position: relative;
 }
+
+div.small.card.border{
+  border: #2A9D8F solid ;
+}
 div.small.card img{
     width: 130px;
     position: absolute;
     align-self: center;
     bottom: 15px;
-    justify-self: ;
 }
 div.small.card h3{
     margin: 0;
     font-size: 30px;
+}
+div.list.card.pricing div.small.card h3{
+    margin: 0;
+    font-size: 25px;
+}
+div.small.card h2{
+    margin: 0;
+    color: #2A9D8F;
+    position: absolute;
+    align-self: center;
+    bottom: 15px;
 }
 div.small.card p{
     margin: 0;
