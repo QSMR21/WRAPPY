@@ -244,3 +244,77 @@ footer p{
     margin: 0;
     color: rgb(239, 247, 255);
 }
+
+
+/* Studio */
+
+h1{
+    text-align: center;
+}
+div.canvas {
+    text-align: center;
+    margin-bottom: 252.5px;
+}
+canvas{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+section.workshop{
+    display: flex;
+    margin-left: 20px;
+}
+
+form{
+    display: flex;
+    height: fit-content;
+    width: 30%;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: rgb(239, 247, 255);
+    background: linear-gradient(168deg, rgba(239, 247, 255, 1) 0%, rgb(217, 255, 251) 100%);
+    padding: 20px 50px;
+    margin-left: 20px;
+}
+
+section.workshop button, label, input {
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+  }
+
+  section.workshop input[type="file"] {
+    height: 0;
+    padding: 0;
+    opacity: 0;
+  }
+
+  section.workshop label[for="file"] {
+   
+    background:#2A9D8F;
+    border-radius: 15px;
+    color: rgb(239, 247, 255);
+    text-align: center;
+    font-family: ARCO;
+    font-weight: 300;
+  }
+
+  section.workshop label[for="file"]:hover {
+    background:#1F756B;
+  }
+
+  section.workshop label[for="file"]:active {
+    box-shadow: inset 1px 1px 3px #ccc;
+  }
+
+  section.workshop ul {
+    list-style: none;
+  }
