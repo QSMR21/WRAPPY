@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <script type="module" src="./js/three.min.js"></script> 
+    <script type="module" src="./js/three.min.js"></script>
     <script type="module" src="./js/main.js"></script>
-    <script type="module" src="./js/OrbitControls.js"></script>  
+    <script type="module" src="./js/OrbitControls.js"></script>
 
     <section class="header">
         <a class="logo" href="index.html">
@@ -23,18 +23,47 @@
         <div class="canvas">
             <canvas id="canvasId"></canvas>
         </div>
-        <form method="post">
-            <h3>Upload your gift</h3>
-            <p>Allowed format files : pdf, jpeg, png</p>
-            <label for="file">Choose your file</label>
-            <input id="file" name="file" type="file" multiple>
-            <ul id="file-list">
-
-            </ul>
-        </form>
-        
+            <form id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
+                <!-- Step 1 Content -->
+                <section id="step-1" class="form-step">
+                    <h3>Upload your gift</h3>
+                    <p>Allowed format files : txt</p>
+                    <label for="file">Choose your file</label>
+                    <input id="file" name="file" type="file" multiple>
+                    <ul id="file-list">
+                    </ul>
+                    <div class="backnext">
+                        <button class="button btn-navigate-form-step next" type="button" step_number="2">Next</button>
+                    </div>
+                </section>
+                <!-- Step 2 Content, default hidden on page load. -->
+                <section id="step-2" class="form-step d-none">
+                    <h3>Choose your animation</h3>
+                    <div class="mt-3">
+                        Block avec différentes animations
+                        <ul><li><section class="cards"><div class="container animation"></div></section></li>
+                        <li><section class="cards"><div class="container animation"></div></li>
+                        <li><section class="cards"><div class="container animation"></div></li></ul>
+                    </div>
+                    <div class="backnext">
+                        <button class="button btn-navigate-form-step back" type="button" step_number="1">Back</button>
+                        <button class="button btn-navigate-form-step next" type="button" step_number="3">Next</button>
+                    </div>
+                </section>
+                <!-- Step 3 Content, default hidden on page load. -->
+                <section id="step-3" class="form-step d-none">
+                    <h3>Write a few words</h3>
+                    <div class="mt-3">
+                        <input type="text" name="Message" id="">
+                    </div>
+                    <div class="backnext">
+                        <button class="button btn-navigate-form-step back" type="button" step_number="2">Back</button>
+                        <button class="button submit-btn" type="submit">Save</button>
+                    </div>
+                </section>
+            </form>
     </section>
-    
+
     <footer>
         <div class="footer bar">
             <div class="column">
