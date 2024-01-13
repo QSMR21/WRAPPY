@@ -1,0 +1,50 @@
+button {
+    margin: 0 auto;
+    width: fit-content;
+    font-family: 'ARCO';
+    font-size: 25px;
+    color: $light;
+    background-color: $accent;
+    padding: 10px 50px;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+
+    &:hover{
+        background-color: $dark-accent !important;
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    &:active{
+        transform: scale(0.98);
+    }
+
+    &.alt{
+        background: none !important;
+        color: $accent !important;
+    }
+
+    &.alt:hover{
+        background: none;
+        color: $dark-accent !important;
+    }
+
+    &.form {
+        font-size: 100%;
+        color: $light;
+        background-color: $accent;
+        padding: 6px 30px;
+    }
+
+    &.disabled,&:disabled {
+        pointer-events: none;
+        background-color: grey;
+
+        &.alt{
+            color: grey !important;
+        }
+    }
+
+
+}

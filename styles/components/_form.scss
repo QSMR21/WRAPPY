@@ -1,0 +1,31 @@
+form{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    text-align: center;
+    @include card-shadow();
+    background: $background-navbar;
+    padding: 20px 30px;
+
+    section.form-step{
+        width: 270px;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+
+    div.animation{
+        margin:20px 0;
+        padding: 0;
+        height: 100px;
+    
+    }
+
+    input[type="text"]{
+        margin-bottom: 20px;
+    }
+}
+
+

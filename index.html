@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wrappy - Digitally wrap your gift</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.scss">
 </head>
 
 <body>
     <section class="header">
         <a class="logo" href="#">
-            <img src="Logo/Wrappy.png" alt="">
+            <img src="assets/Logo/Wrappy.png" alt="">
         </a>
         <nav class="nav">
             <li>Animations</li>
@@ -24,40 +24,44 @@
         <div class="landing_page">
             <p class="big_title">DIGITALLY WRAP YOUR GIFT</p>
             <p class="subtitle">Create a free and animated unwrapping experience for all your files</p>
-            <a href="studio.html">
+            <a href="html/workshop.html">
                 <button class="cta">Send your gift </button>
             </a>
         </div>
 
     </section>
     <section class="cards">
-        <p class="title">
-            A new standard for gift giving
-        </p>
-        <div class="container">
-            <p class="description">
-                A brief overview of the app and its main features, such as the variety of gift options, personalized
-                messaging, and interactive unwrapping experience
+        <div class="column cards">
+            <p class="title">
+                A new standard for gift giving
             </p>
-            <img src="Logo/Gift.png" alt="">
-        </div>
+            <div class="card">
+                <p class="description">
+                    A brief overview of the app and its main features, such as the variety of gift options, personalized
+                    messaging, and interactive unwrapping experience
+                </p>
+                <img src="assets/Logo/Gift.png" alt="">
+            </div>
 
 
-        <p class="title">
-            Interactive Unwrapping Experience
-        </p>
-        <div class="container">
-            <p class="description">
-                Our app features an interactive and animated unwrapping experience that will make your gift feel extra
-                special. <br><br>
-                As the recipient opens their gift, they'll be greeted with a custom and festive unwrapping animation
-                that brings their present to life
+            <p class="title">
+                Interactive Unwrapping Experience
             </p>
+            <div class="card">
+                <p class="description">
+                    Our app features an interactive and animated unwrapping experience that will make your gift feel
+                    extra
+                    special. <br><br>
+                    As the recipient opens their gift, they'll be greeted with a custom and festive unwrapping animation
+                    that brings their present to life
+                </p>
+            </div>
         </div>
+
         <p class="title" id="Pricing">
             Pricing
         </p>
-        <div class="list card pricing">
+        <div class="list cards pricing">
             <div class="small card">
                 <h3>Free</h3>
                 <p>Upload the gift you want to send</p>
@@ -76,30 +80,30 @@
         <p class="title">
             Get started !
         </p>
-        <div class="list card">
+        <div class="list cards" :last-child>
             <div class="small card">
                 <h3>1.</h3>
                 <p>Upload the gift you want to send</p>
-                <img src="Logo/Icone upload.png" alt="">
+                <img src="assets/Logo/Icone upload.png" alt="">
             </div>
             <div class="small card">
                 <h3>2.</h3>
                 <p>Select and custom the unwrapping experience</p>
-                <img src="Logo/Gift Picking.png" alt="">
+                <img src="assets/Logo/Gift Picking.png" alt="">
             </div>
             <div class="small card">
                 <h3>3.</h3>
                 <p>Fill in the details and mean of delivery</p>
-                <img src="Logo/Gift label.png" alt="">
+                <img src="assets/Logo/Gift label.png" alt="">
             </div>
             <div class="small card">
                 <h3>4.</h3>
                 <p>Enjoy your present !</p>
-                <img src="Logo/Gift.png" alt="">
+                <img src="assets/Logo/Gift.png" alt="">
             </div>
         </div>
         <Div class="button cta">
-            <a href="studio.html">
+            <a href="html/workshop.html">
                 <button class="cta">Send your gift </button>
             </a>
         </Div>
@@ -116,7 +120,7 @@
                 <li>Studio</li>
                 <li>Profile</li>
             </div>
-            <img src="Logo/W Blanc.png" alt="Paraphe Logo">
+            <img src="assets/Logo/W Blanc.png" alt="Paraphe Logo">
             <div class="column">
                 <li class="label">Links</li>
                 <li>Twitter</li>

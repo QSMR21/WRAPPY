@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrappy - Gift Workshop</title>    
+    <link rel="stylesheet" href="../main.scss">
+</head>
+
+<body>
+        <script type="module" src="../main.js"></script>
+
+
+    <section class="header">
+        <a class="logo" href="../index.html">
+            <img src="../assets/Logo/Wrappy.png" alt="Logo du site">
+        </a>
+    </section>
+    <h1>Gift Workshop</h1>
+    <section class="workshop">
+        
+        <div class="canvas">
+            <canvas id="canvasId"></canvas>
+        </div>
+            <form id="Gift Form" enctype="multipart/form-data" method="POST">
+            <!-- STEP 1 -->
+                <section id="step-1" class="form-step">
+                    <h3>Upload your gift</h3>
+                    <p>Allowed format files : txt</p>
+                    <label for="file">Choose your file</label>
+                    <input id="file" name="file" type="file" multiple>
+                    <ul id="file-list">
+                    </ul>
+                    <div class="backnext">
+                        <button class="form navigate" type="button" step_number="2">Next</button>
+                    </div>
+                </section>
+            <!-- STEP 2 -->
+                <section id="step-2" class="form-step d-none">
+                    <h3>Choose your animation</h3>
+                    <div class="mt-3">
+                        <ul><li><div class="card animation"></div></li>
+                        <li><div class="card animation"></div></li>
+                        <li><div class="card animation"></div></li></ul>
+                    </div>
+                    <div class="backnext">
+                        <button class=" form navigate alt" type="button" step_number="1">Back</button>
+                        <button class="form navigate" type="button" step_number="3">Next</button>
+                    </div>
+                </section>
+            <!-- STEP 3 -->
+                <section id="step-3" class="form-step d-none">
+                    <h3>Write a few words</h3>
+                    <div class="mt-3">
+                        <label for="text">Name</label>
+                        <input type="text" class="n-submit" placeholder="Dear..." name="Recipient Name">
+                        <label for="text">Message</label>
+                        <textarea class="message" placeholder="Message..." name="Message"></textarea>
+                        <label for="text">Signature</label>
+                        <input type="text" class="n-submit" placeholder="Your truly..." name="Signature">
+                    </div>
+                    <div class="backnext">
+                        <button class="form navigate alt" type="button" step_number="2">Back</button>
+                        <button class="form navigate" type="button" step_number="4">Next</button>                    
+                    </div>
+                </section>
+             <!-- STEP 4 -->
+                <section id="step-4" class="form-step d-none">
+                    <h3>Choose your color</h3>
+                    <div class="mt-3">
+                        <input type="button" class="btn color" value="green" color="0x00ff00" name="color">
+                        <input type="button" class="btn color" value="red" color="0xff0000" name="color">
+                        <input type="button" class="btn color" value="blue" color="0x0000ff" name="color" style="margin-bottom: 20px;"> 
+                    </div>
+                    <div class="backnext">
+                        <button class="form navigate alt" type="button" step_number="3">Back</button>
+                        <button class="form navigate" type="button" step_number="5">Next</button>                    
+                    </div>
+                </section>
+            <!-- STEP 5 -->
+                <section id="step-5" class="form-step d-none">
+                    <h3>Guess the number</h3>
+                    <div class="mt-3" id="reset">
+                        <p>A number between 1 and 100, 10 tries</p>
+                        <input type="number" id="guess" class="guessField" placeholder="Enter a guess">
+                        <button class="form alt game" type="button">submit</button>
+                        <p class="guesses"></p>
+                        <p class="test"></p>
+                        <p class="loworhigh"></p>
+                    </div>
+                    <div class="backnext">
+                        <button class="form navigate alt" type="button" step_number="4">Back</button>
+                        <button class="form submit-btn" type="submit">Send</button>
+                    </div>
+                </section>
+            </form>
+    </section>
+
+    <footer>
+        <div class="footer bar">
+            <div class="column">
+                <li class="label">Navigation</li>
+                <li>Home</li>
+                <li>Animations</li>
+                <li>Pricing</li>
+                <li>Studio</li>
+                <li>Profile</li>
+            </div>
+            <img src="../assets/Logo/W Blanc.png" alt="Paraphe Logo">
+            <div class="column">
+                <li class="label">Links</li>
+                <li>Twitter</li>
+                <li>Terms and conditions</li>
+            </div>
+        </div>
+        <p>&copy; 2024 wrappy.com</p>
+    </footer>
+</body>
+
+</html>

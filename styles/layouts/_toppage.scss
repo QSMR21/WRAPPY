@@ -1,0 +1,33 @@
+section.top_page {
+    height: calc(100vh - 60px);
+
+    .landing_page {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 20vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    }
+
+    .big_title {
+        font-size: 80px;
+        font-weight: 900;
+        margin-bottom: 0px;
+    }
+    
+    .subtitle {
+        font-weight: 400;
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 70px;
+    }
+}
+
+
+
+
+
+
+
+

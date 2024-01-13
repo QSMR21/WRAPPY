@@ -1,0 +1,46 @@
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: "ARCO";
+    src: url('assets/ARCO.ttf') format'truetype';
+}
+
+
+//Colors
+
+$background-gradient: linear-gradient(157deg, rgba(239, 247, 255, 1) 0%, rgba(177, 228, 222, 1) 100%);
+$background-navbar: linear-gradient(157deg, rgba(239, 247, 255, 1) 20%, rgb(226, 246, 249) 100%);
+
+$main: #264653;
+$accent: #2A9D8F;
+$dark-accent: #1F756B;
+$light: #EFF7FF;
+
+//Base style
+
+* {
+    font-family: 'Poppins';
+    color: $main;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 ;
+    background: $background-gradient;
+    h1 {
+        text-align: center;
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+//Mixins
+
+@mixin card-shadow(){
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,38 @@
+section.cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+    align-items: center;
+
+
+    p.title {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    div.column.cards {
+
+        div.card {
+            margin: 0 auto;
+            min-width: 530px;
+            margin-bottom: 15vh;
+        }
+    }
+
+    div.list.cards {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-bottom: 15vh;
+        gap: 40px;
+        text-align: center;
+
+    }
+
+    button {
+        margin-bottom: 10vh;
+    }
+}
